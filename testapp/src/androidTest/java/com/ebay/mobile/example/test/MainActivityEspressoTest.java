@@ -38,6 +38,9 @@ public class MainActivityEspressoTest {
         onView(withId(R.id.textView))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.INVISIBLE)));
 
+        onView(withId(R.id.button))
+                .check(matches(withText(R.string.button_text_show)));
+
     }
 
     /***
@@ -60,6 +63,9 @@ public class MainActivityEspressoTest {
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)))
                 .check(matches(withText(stringToCheck)));
 
+        onView(withId(R.id.button))
+                .check(matches(withText(R.string.button_text_hide)));
+
     }
 
     /***
@@ -75,6 +81,9 @@ public class MainActivityEspressoTest {
 
         onView(withId(R.id.textView))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.INVISIBLE)));
+
+        onView(withId(R.id.button))
+                .check(matches(withText(R.string.button_text_show)));
 
     }
 
@@ -97,6 +106,9 @@ public class MainActivityEspressoTest {
         onView(withId(R.id.textView))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)))
                 .check(matches(withText(stringToCheck)));
+
+        onView(withId(R.id.button))
+                .check(matches(withText(R.string.button_text_hide)));
 
     }
 
@@ -123,6 +135,9 @@ public class MainActivityEspressoTest {
 
         onView(withId(R.id.textView))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.INVISIBLE)));
+
+        onView(withId(R.id.button))
+                .check(matches(withText(R.string.button_text_show)));
 
     }
 
@@ -153,6 +168,9 @@ public class MainActivityEspressoTest {
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)))
                 .check(matches(withText(stringToCheck)));
 
+        onView(withId(R.id.button))
+                .check(matches(withText(R.string.button_text_hide)));
+
     }
 
     /***
@@ -175,6 +193,9 @@ public class MainActivityEspressoTest {
 
         onView(withId(R.id.textView))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.INVISIBLE)));
+
+        onView(withId(R.id.button))
+                .check(matches(withText(R.string.button_text_show)));
 
     }
 
@@ -205,6 +226,9 @@ public class MainActivityEspressoTest {
         onView(withId(R.id.textView))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)))
                 .check(matches(withText(stringToCheck)));
+
+        onView(withId(R.id.button))
+                .check(matches(withText(R.string.button_text_hide)));
 
     }
 }
