@@ -197,7 +197,6 @@ public class MainActivityEspressoTest {
     /***
      * Verifying persistence of state after testing show functionality
      * by rotating orientation from landscape to portrait
-     * This test is expected to fail due to lack of state persistence
      */
     @Test
     public void clickButton_show_statePersistenceOnRotation_landscapeToPortrait() {
