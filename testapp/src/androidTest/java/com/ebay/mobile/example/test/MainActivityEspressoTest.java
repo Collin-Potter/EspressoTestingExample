@@ -51,8 +51,6 @@ public class MainActivityEspressoTest {
 
         activityTestRule.getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        String stringToCheck = "Hide me!";
-
         onView(withId(R.id.button))
                 .perform(click());
 
@@ -61,7 +59,7 @@ public class MainActivityEspressoTest {
 
         onView(withId(R.id.textView))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)))
-                .check(matches(withText(stringToCheck)));
+                .check(matches(withText(R.string.textview_text)));
 
         onView(withId(R.id.button))
                 .check(matches(withText(R.string.button_text_hide)));
@@ -95,8 +93,6 @@ public class MainActivityEspressoTest {
 
         activityTestRule.getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
-        String stringToCheck = "Hide me!";
-
         onView(withId(R.id.button))
                 .perform(click());
 
@@ -105,7 +101,7 @@ public class MainActivityEspressoTest {
 
         onView(withId(R.id.textView))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)))
-                .check(matches(withText(stringToCheck)));
+                .check(matches(withText(R.string.textview_text)));
 
         onView(withId(R.id.button))
                 .check(matches(withText(R.string.button_text_hide)));
@@ -150,7 +146,6 @@ public class MainActivityEspressoTest {
 
         activityTestRule.getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        String stringToCheck = "Hide me!";
 
         onView(withId(R.id.button))
                 .perform(click());
@@ -160,13 +155,13 @@ public class MainActivityEspressoTest {
 
         onView(withId(R.id.textView))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)))
-                .check(matches(withText(stringToCheck)));
+                .check(matches(withText(R.string.textview_text)));
 
         activityTestRule.getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         onView(withId(R.id.textView))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)))
-                .check(matches(withText(stringToCheck)));
+                .check(matches(withText(R.string.textview_text)));
 
         onView(withId(R.id.button))
                 .check(matches(withText(R.string.button_text_hide)));
@@ -208,9 +203,7 @@ public class MainActivityEspressoTest {
     public void clickButton_show_statePersistenceOnRotation_landscapeToPortrait() {
 
         activityTestRule.getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-
-        String stringToCheck = "Hide me!";
-
+        
         onView(withId(R.id.button))
                 .perform(click());
 
@@ -219,13 +212,13 @@ public class MainActivityEspressoTest {
 
         onView(withId(R.id.textView))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)))
-                .check(matches(withText(stringToCheck)));
+                .check(matches(withText(R.string.textview_text)));
 
         activityTestRule.getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         onView(withId(R.id.textView))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)))
-                .check(matches(withText(stringToCheck)));
+                .check(matches(withText(R.string.textview_text)));
 
         onView(withId(R.id.button))
                 .check(matches(withText(R.string.button_text_hide)));
