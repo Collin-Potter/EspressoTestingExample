@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">eBay QE Probe</string>
+    <string name="textview_text">Versteck mich!</string>
+    <string name="button_text_hide">Verstecken</string>
+    <string name="button_text_show">Anzeigen</string>
+</resources>
+

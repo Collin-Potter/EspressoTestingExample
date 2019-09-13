@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">eBay QE Test</string>
+    <string name="textview_text">Hide me!</string>
+    <string name="button_text_hide">Hide</string>
+    <string name="button_text_show">Show</string>
+</resources>
