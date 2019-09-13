@@ -2,10 +2,10 @@
 
 ## Requirements tested
 
-- Clicking the 'hide' button while in portrait mode should result in a hidden TextView
-- Clicking the 'hide' button while in landscape mode should result in a hidden TextView
-- Clicking the 'show' button while in portrait mode should result in a visible TextView
-- Clicking the 'show' button while in landscape mode should result in a visible TextView
+- Clicking the 'hide' button while in portrait mode should result in a hidden TextView and button text changed to 'show'
+- Clicking the 'hide' button while in landscape mode should result in a hidden TextView and button text changed to 'show'
+- Clicking the 'show' button while in portrait mode should result in a visible TextView and button text changed to 'hide'
+- Clicking the 'show' button while in landscape mode should result in a visible TextView and button text changed to 'hide'
 
 All previous tests were also tested with activity interruptions in the form of orientation changes to test state persistence
 
